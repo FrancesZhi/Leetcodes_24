@@ -1,8 +1,8 @@
-Get Minimum Pen Drive Size
-👩‍🎓 NEW GRAD
-📚 AMAZON
+Get Minimum Pen Drive Size  
+👩‍🎓 NEW GRAD  
+📚 AMAZON  
 Within the Amazon Gaming Distribution System, a logistics coordinator is faced with the task of efficiently distributing n games among k different children. Each game is characterized by its size, denoted by gameSize[i] for 1 ≤ i ≤ n.
-
+  
 To facilitate the distribution process, the coordinator opts to utilize pen drives, ordering k pen drives with identical storage capacity. Each pen drive can receive a maximum of 2 games, and every child must receive at least one game, also no game should be left unassigned.
 
 Considering the impracticality of transferring large game files over the internet, the strategy involves determining the minimum storage capacity required for the pen drives. A pen drive can only store games if the sum of their sizes does not exceed the pen drive's storage capacity.
@@ -57,8 +57,8 @@ def check(gameSize,k,size_mid):
         return False 
     gameSize = gameSize[2k - games_size:]
     for i in range(len(gameSize)):
-    if gameSize[i] +gameSize[len(gameSize)-1-i] >x :
-        return False
+        if gameSize[i] +gameSize[len(gameSize)-1-i] >x :
+            return False
     return True
     
 def getMinSize(self, gameSize: List[int], k: int) -> int:
